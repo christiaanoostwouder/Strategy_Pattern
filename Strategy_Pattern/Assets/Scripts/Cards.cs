@@ -17,14 +17,10 @@ public class Cards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Get the main camera reference
         mainCamera = Camera.main;
-
-        // Generate cards at the bottom center of the screen
         GenerateCardsInRow();
     }
 
-    // Method to generate cards in a row at the bottom of the screen
     void GenerateCardsInRow()
     {
         if (cardPrefabs.Length == 0)
@@ -45,23 +41,15 @@ public class Cards : MonoBehaviour
         // Loop through and generate cards
         for (int i = 0; i < numberOfCards; i++)
         {
-            // Generate a random card
             int randomIndex = Random.Range(0, cardPrefabs.Length);
-
-            // Calculate the position for this card
             Vector3 cardPosition = new Vector3(startPosition.x + i * cardSpacing, startPosition.y, 0);
-
-            // Instantiate the card at the calculated position
             Instantiate(cardPrefabs[randomIndex], cardPosition, Quaternion.identity);
 
             Debug.Log("Generated a random card: " + cardPrefabs[randomIndex].name);
         }
     }
-
-    // Method to get the bottom center position of the screen
     Vector3 GetBottomCenterPosition()
     {
-        // Get the bottom center point in world space
         return mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, mainCamera.nearClipPlane));
     }
 }

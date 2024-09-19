@@ -2,29 +2,49 @@ using UnityEngine;
 
 public class DragablePoint : MonoBehaviour
 {
-    public bool IsDraging = false;
+    public bool IsDragging = false;
     public BoxCollider collider;
+    public SpriteRenderer spriteRenderer;
+    private int initialSortingOrder;
+
     void Start()
     {
-
+        if (spriteRenderer != null)
+        {
+            initialSortingOrder = spriteRenderer.sortingOrder;
+        }
     }
+
     private void OnMouseDown()
     {
-        IsDraging = true;
+        IsDragging = true;
     }
+
     private void OnMouseUp()
     {
-        IsDraging = false;
+        IsDragging = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 MousPost = Input.mousePosition;
-        MousPost = Camera.main.ScreenToWorldPoint(MousPost);
-        if (IsDraging)
+        if (IsDragging)
         {
-            this.transform.position = new Vector3(MousPost.x, MousPost.y, 0);
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+            this.transform.position = new Vector3(worldPos.x, worldPos.y, this.transform.position.z);
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sortingOrder = initialSortingOrder + 1;
+            }
+        }
+        else
+        {
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sortingOrder = initialSortingOrder;
+            }
         }
     }
 }
