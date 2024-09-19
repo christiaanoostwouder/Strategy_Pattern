@@ -9,6 +9,8 @@ public class DragablePoint : MonoBehaviour
 
     void Start()
     {
+        collider = GetComponent<BoxCollider>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
             initialSortingOrder = spriteRenderer.sortingOrder;
