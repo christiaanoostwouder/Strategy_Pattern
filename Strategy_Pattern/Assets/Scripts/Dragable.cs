@@ -49,4 +49,12 @@ public class DragablePoint : MonoBehaviour
             }
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the collided object has an ICard interface
+        if (collision.TryGetComponent<ICard>(out ICard card))
+        {
+            PlayCard();
+        }
+    }
 }
