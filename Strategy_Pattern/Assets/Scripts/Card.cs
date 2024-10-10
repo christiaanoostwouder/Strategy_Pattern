@@ -6,22 +6,28 @@ public class Card : MonoBehaviour, ICard
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the collided object has an ICard interface
-        if (collision.TryGetComponent<ICard>(out ICard card))
+        if (collision.tag == "PlayArea")
         {
             PlayCard();
         }
     }
-
-    // Update is called once per frame
     void Update()
     {
-        // Add any continuous update logic, if necessary
-    }
 
-    // This is the proper implementation of PlayCard as required by the ICard interface
+    }
     public void PlayCard()
     {
+        Energy energy = GetComponent<Energy>();
 
+        if (energy != null && energy.currentEnergy >= CardEnergyCost)
+        {
+
+            energy.currentEnergy -= CardEnergyCost;
+            Debug.Log("Card played! Remaining energy: " + energy.currentEnergy);
+        }
+        else
+        {
+            Debug.Log("Not enough energy to play the card!");
+        }
     }
 }
