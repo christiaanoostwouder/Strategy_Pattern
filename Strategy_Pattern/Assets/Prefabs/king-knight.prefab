@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6330254559460630527}
   - component: {fileID: -1640597211497971653}
   - component: {fileID: -1618502123380374644}
+  - component: {fileID: -1487421384159247113}
   m_Layer: 0
   m_Name: king-knight
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   IsDragging: 0
   collider: {fileID: -1640597211497971653}
   spriteRenderer: {fileID: 0}
+--- !u!114 &-1487421384159247113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6238073962913791744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

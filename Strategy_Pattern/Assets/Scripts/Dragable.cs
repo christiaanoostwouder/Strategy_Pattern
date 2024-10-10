@@ -54,7 +54,7 @@ public class DragablePoint : MonoBehaviour
         // Check if the collided object has an ICard interface
         if (collision.TryGetComponent<ICard>(out ICard card))
         {
-            PlayCard();
+           
         }
     }
 }

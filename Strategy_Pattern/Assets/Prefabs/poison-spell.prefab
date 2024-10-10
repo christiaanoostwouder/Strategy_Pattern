@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1077181696386272991}
   - component: {fileID: 1466342354109980778}
   - component: {fileID: 497359860552942301}
+  - component: {fileID: -5478093974907501603}
   m_Layer: 0
   m_Name: poison-spell
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   IsDragging: 0
   collider: {fileID: 1466342354109980778}
   spriteRenderer: {fileID: 0}
+--- !u!114 &-5478093974907501603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755197236356008713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

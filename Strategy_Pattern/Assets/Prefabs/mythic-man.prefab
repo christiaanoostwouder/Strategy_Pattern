@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6620870393882548514}
   - component: {fileID: 4167000124262391293}
   - component: {fileID: 4789257237338607984}
+  - component: {fileID: -4135851909621695915}
   m_Layer: 0
   m_Name: mythic-man
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   IsDragging: 0
   collider: {fileID: 4167000124262391293}
   spriteRenderer: {fileID: 0}
+--- !u!114 &-4135851909621695915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559178446572931950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

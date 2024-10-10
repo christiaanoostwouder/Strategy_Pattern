@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4110790637973154795}
   - component: {fileID: 4378221021695030826}
   - component: {fileID: 5774493413996191158}
+  - component: {fileID: 8914401754020348039}
   m_Layer: 0
   m_Name: ice-spell
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   IsDragging: 0
   collider: {fileID: 4378221021695030826}
   spriteRenderer: {fileID: 0}
+--- !u!114 &8914401754020348039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048067723877030197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

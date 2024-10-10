@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6341125330838119196}
   - component: {fileID: 7442846036847776553}
   - component: {fileID: 4141855737595005289}
+  - component: {fileID: 3119410371888681924}
   m_Layer: 0
   m_Name: mythic-wolf
   m_TagString: Untagged
@@ -122,3 +123,16 @@ MonoBehaviour:
   IsDragging: 0
   collider: {fileID: 7442846036847776553}
   spriteRenderer: {fileID: 0}
+--- !u!114 &3119410371888681924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603588221189868025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

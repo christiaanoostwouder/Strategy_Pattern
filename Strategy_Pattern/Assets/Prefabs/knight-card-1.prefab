@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3835758939529124674}
   - component: {fileID: 803781771142774602}
   - component: {fileID: 7972274860460674550}
+  - component: {fileID: 855577333084423646}
   m_Layer: 0
   m_Name: knight-card-1
   m_TagString: Untagged
@@ -122,3 +123,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.24, y: 10.24, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &855577333084423646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087219583629697569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15eb08bdaa8b44eba5a3b9ed6c6809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10

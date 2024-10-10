@@ -6,10 +6,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float maxHealth = 100f;
-
-   
     private float currentHealth;
-
     
     public delegate void OnDeath();
     public event OnDeath onDeath;
