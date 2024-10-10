@@ -14,7 +14,6 @@ public class Cards : MonoBehaviour
     // Number of cards to generate
     public int numberOfCards = 5;
 
-    // Start is called before the first frame update
     void Start()
     {
         mainCamera = Camera.main;

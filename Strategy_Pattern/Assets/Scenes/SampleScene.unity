@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317aeff203d10a947b696e80ff37547b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardEnergyExpense: 0
+  cardEnergyCost: 0
   energyText: {fileID: 784460165}
   currentEnergy: 0
   startEnergy: 3
@@ -270,7 +272,7 @@ MonoBehaviour:
   - {fileID: 7283347226834507388, guid: 0a65528687fde24459098cefeb616127, type: 3}
   - {fileID: 6238073962913791744, guid: 2f3bf7e211c541e49b8ffde52c2e3ed2, type: 3}
   - {fileID: 2087219583629697569, guid: 57e17893d2b0c144891d71da3a08ca73, type: 3}
-  - {fileID: 6705561549186703553, guid: 85db675d10f909e4eaf67cbb32fe87ec, type: 3}
+  - {fileID: 2087219583629697569, guid: 57e17893d2b0c144891d71da3a08ca73, type: 3}
   - {fileID: 2138050367056166184, guid: 35a7158fa7c8eef459cf5a324573bae6, type: 3}
   - {fileID: 1619314654417403262, guid: ca811fd4d77fc7242b3c1943fe375322, type: 3}
   - {fileID: 7699997302471909317, guid: 82377c656adadd34a9ed45f0139d7588, type: 3}
