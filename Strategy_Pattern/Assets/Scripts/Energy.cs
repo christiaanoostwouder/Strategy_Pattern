@@ -3,10 +3,8 @@ using UnityEngine;
 
 public class Energy : MonoBehaviour
 {
-    [SerializeField] public bool cardEnergyExpense;
-    [SerializeField] public float cardEnergyCost;
     [SerializeField] public TextMeshProUGUI energyText;  // UI Text element to display energy
-    [SerializeField] private int currentEnergy = 0;  // Current energy the player has
+    [SerializeField] public int currentEnergy = 0;  // Current energy the player has
     [SerializeField] public int startEnergy = 3;     // Starting energy at the beginning of the game/turn
 
     void Start()
